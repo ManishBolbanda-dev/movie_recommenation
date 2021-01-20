@@ -8,10 +8,10 @@
 <body id="content">
  {% if arr|length > 1 %}
     <div class="sucesspage">
-        <div>Recommended Movies for movie "{{title}}" </div>
+        <div style="background-color: maroon;">Recommended Movies for movie "{{title}}" </div>
         <br> <br>
         {% for movie_title in arr %}
-        <div>
+        <div style="background-color: maroon;">
             <span>{{movie_title|capitalize}}</span>
         </div>
         <br>
