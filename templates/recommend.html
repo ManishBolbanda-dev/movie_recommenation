@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recommendations</title>
+</head>
+<body id="content">
+ {% if arr|length > 1 %}
+    <div class="sucesspage">
+        <div>Recommended Movies for movie "{{title}}" </div>
+        <br> <br>
+        {% for movie_title in arr %}
+        <div>
+            <span>{{movie_title|capitalize}}</span>
+        </div>
+        <br>
+        {% endfor %}
+    </div>
+    {% endif %}
+</body>
+</html>
